@@ -114,7 +114,7 @@ const App = () => {
                     type="checkbox"
                     checked={item.done}
                     onChange={() => toggleDone(index)}
-                    className="w-5 h-5 rounded appearance-none checked:bg-yellow-300 checked:border-yellow-300 border-2 border-cyan-400 focus:outline-none cursor-pointer"
+                    className="w-5 h-5 rounded appearance-none checked:bg-cyan-300 checked:border-cyan-300 border-2 border-cyan-400 focus:outline-none cursor-pointer"
                   />
                   {editingIndex === index ? (
                     <input
