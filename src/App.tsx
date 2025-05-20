@@ -114,8 +114,8 @@ const App = () => {
                     type="checkbox"
                     checked={item.done}
                     onChange={() => toggleDone(index)}
-                    className="w-5 h-5 rounded appearance-none checked:bg-cyan-300 checked:border-cyan-300 border-2 border-cyan-400 focus:outline-none cursor-pointer"
-                  />
+                    className="w-2 h-2 ml-2 rounded appearance-none checked:bg-yellow-300 checked:border-yellow-300 border-2 border-cyan-400 focus:outline-none cursor-pointer"
+                  />              
                   {editingIndex === index ? (
                     <input
                       className="border-0 border-b border-cyan-300 bg-transparent p-1 w-full text-cyan-300 focus:outline-none focus:border-b-2 focus:border-cyan-300"
@@ -124,7 +124,7 @@ const App = () => {
                       onKeyDown={(e) => e.key === "Enter" && saveEdit(index)}
                       onBlur={() => saveEdit(index)}
                       autoFocus
-                    />
+                    />                     
                   ) : (
                     <span className={item.done ? "line-through" : ""}> {item.text} </span>
                   )}
